@@ -1,0 +1,104 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container for the text animation */
+.text-animation {
+  display: inline-block;
+  opacity: 0;  /* Start as hidden */
+  animation: reveal-text 8s forwards;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #17a2b8;  /* Bootstrap info color */
+}
+
+/* Keyframes for revealing the text word by word */
+@keyframes reveal-text {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Optional: Make the paragraph animated word by word */
+.text-animation span {
+  opacity: 0;
+  animation: fadeInWord 0.5s ease forwards;
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes fadeInWord {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
